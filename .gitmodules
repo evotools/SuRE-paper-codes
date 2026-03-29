@@ -1,0 +1,3 @@
+[submodule "EvaReg-analysis"]
+	path = EvaReg-analysis
+	url = https://github.com/evotools/EvaReg-analysis.git
