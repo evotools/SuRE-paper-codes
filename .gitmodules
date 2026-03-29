@@ -1,3 +1,6 @@
 [submodule "EvaReg-analysis"]
 	path = EvaReg-analysis
 	url = https://github.com/evotools/EvaReg-analysis.git
+[submodule "disTrain"]
+	path = disTrain
+	url = https://github.com/evotools/disTrain.git
