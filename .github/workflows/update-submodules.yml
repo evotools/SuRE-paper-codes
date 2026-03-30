@@ -2,8 +2,8 @@ name: 'Update Submodules'
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
-  workflow_dispatch:   # Allows you to run it manually with one click
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -12,13 +12,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}  # PAT with access to submodule repos
+          submodules: false                 # Don't auto-init yet; we'll do it manually
 
-      - name: Update Submodules
+      - name: Configure Git credentials for submodules
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/".insteadOf "https://github.com/"
+
+      - name: Init and update submodules
         run: |
           git submodule update --init --recursive --remote --merge
-          
+
       - name: Check for changes
         id: check_changes
         run: |
