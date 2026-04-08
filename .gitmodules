@@ -2,10 +2,6 @@
 	path = EvaReg-analysis
 	url = https://github.com/evotools/EvaReg-analysis.git
 	branch = main
-[submodule "disTrain"]
-	path = disTrain
-	url = https://github.com/evotools/disTrain.git
-	branch = main
 [submodule "EvaReg-training"]
 	path = EvaReg-training
 	url = https://github.com/evotools/EvaReg-training.git
