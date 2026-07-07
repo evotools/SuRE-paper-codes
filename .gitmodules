@@ -8,3 +8,6 @@
 [submodule "SuRE-gg-variants"]
 	path = SuRE-gg-variants
 	url = https://github.com/evotools/SuRE-gg-variants.git
+[submodule "SuRE-sequence-processes"]
+	path = SuRE-sequence-processes
+	url = https://github.com/evotools/SuRE-sequence-processes.git
