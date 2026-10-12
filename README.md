@@ -5,3 +5,6 @@ This is the master repository for all the codes in the SuRE MPRA paper. Each sub
 - `EvaReg-training`: contains all the code related to EvaReg model training
 - `SuRE-gg-variants`: contains the code related to graphs and variant analysis
 - `SuRE-sequence-processes`: contains all the code related to processing SuRE scores and extracting sequences for model training
+
+## Release
+Please use the release version `1.0.0` as the latest stable version used in our paper
